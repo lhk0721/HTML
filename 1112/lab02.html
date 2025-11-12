@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+<meta charset="UTF-8" >
+<meta http-equiv="X-UA-Compatible" content="IE=edge" >
+<meta name="viewport" 
+        content="width=device-width, 
+                initial-scale=1.0, 
+                minimum-scale=1.0, 
+                maximum-scale=5.0, 
+                user-scalable=yes" >
+<meta name="description" content="설명 입력">
+<title>(해보기) 로그인</title>
+</head>
+<body>
+<section>
+    <!-- 로그인 컨테이너 -->
+    
+<section>
+    <table>
+        <p>더 편리해진 위니브에 오신 것을 환영합니다.</p>
+        <div>      
+            <button>
+                <a href="">Weniv 로그인</a>
+            </button>
+        </div>
+        <button>
+            <a href="">아이디 | 비밀번호 찾기</a>
+        </button>
+        <button>
+            <a href="">회원가입</a>
+        </button>
+    </table>    
+</section>      
+
+<hr>
+
+<section>
+<table border="1">
+    <tr>
+        <td colspan="3" align="center">
+            <p>더 편리해진 위니브에 오신 것을 환영합니다.</p>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="3" align="center">
+            <button>weniv 로그인</button>
+        </td>
+    </tr>
+    <tr>
+        <td>
+        <a href="">아이디 | 비밀번호 찾기</a>
+        </td>
+
+        <td>&nbsp;</td>
+
+        <td>
+        <a href="" >회원가입</a>
+        </td>
+    </tr>
+</table>
+
+<hr>
+
+<!-- 1. 마크업해야 하는 이 영역이 어떤 부분에 들어갈 어떤 영역인지 -->
+<!-- 2. 요소 먼저 작성하고, div로 묶는다. -->
+<section>
+    <!-- 섹션 내부에는 제목 태그가 들어가야 함. -->
+    <h2>로그인</h2><!--디자인 상 없어야 하면 CSS로 안보이게 처리.-->
+    <p>더 편리해진 위니브에 오신 것을 환영합니다.</p>
+    <!-- button vs a 어떤 액션이 추가될 지 고려하여 사용 -->
+    <a href="">
+        <!-- 페이지 로고 같은 경우, alt는 로고에 쓰여진 글자 그대로 -->
+        <img src="./src/weniv-logo.png" alt="weniv">
+        <span>로그인</span>
+    </a>
+    <!-- 단순 시각적 디자인 요소라면 alt속성을 비워놓는다. -->
+    <img src="./src/icon-lock.png" alt="">
+    <a href="">아이디</a>
+    | <!-- 나중에 CSS로 추가해줘도 된다. -->
+    <a href="">비밀번호</a>
+    <img src="./src/icon-user.png" alt="">
+    <a href="">회원가입</a>
+
+</section>
+
+</body>
+</html>

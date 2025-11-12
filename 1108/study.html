@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+
+<!-- head -->
+<head>
+
+<!-- meta -->
+<meta charset="UTF-8" >
+<meta http-equiv="X-UA-Compatible" content="IE=edge" >
+<meta name="viewport" 
+        content="width=device-width, 
+                initial-scale=1.0, 
+                minimum-scale=1.0, 
+                maximum-scale=5.0, 
+                user-scalable=yes" >
+<meta name="description" content="설명 입력">
+<!-- //meta -->
+
+<!--title-->
+<title>Title</title>
+<!-- //title -->
+
+<!--link -->
+<link rel="stylesheet" href="css/style.css">
+<link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+<!-- //link -->
+
+</head>
+<!-- //head -->
+
+<!-- body -->
+<body>
+<!-- section -->
+<section>
+  <pre><code>
+  &lt;h1&gt;HTML tag types (h1 tag)&lt;/h1&gt;
+    &lt;h2&gt;h2 tag&lt;/h2&gt;
+      &lt;h3&gt;h3 tag&lt;/h3&gt;
+        &lt;h4&gt;h4 tag&lt;/h4&gt;
+          &lt;h5&gt;h5 tag&lt;/h5&gt;
+            &lt;h6&gt;h6 tag&lt;/h6&gt;
+  </code></pre>
+
+
+  <h1>HTML tag types (h1 tag)</h1>
+    <h2>h2 tag</h2>
+      <h3>h3 tag</h3>
+        <h4>h4 tag</h4>
+          <h5>h5 tag</h5>
+            <h6>h6 tag</h6>
+
+</section>
+<!-- //section -->
+
+<hr>
+
+<section>
+<pre><code>
+&lt;h1&gt;h1&lt;/h1&gt;
+  &lt;h2&gt;h2&lt;/h2&gt;
+  &lt;h2&gt;h2&lt;/h2&gt;
+    &lt;h3&gt;h3&lt;/h3&gt;
+  &lt;h2&gt;h2&lt;/h2&gt;
+    &lt;h3&gt;h3&lt;/h3&gt;
+      &lt;h4&gt;h4&lt;/h4&gt;
+  &lt;h2&gt;h2&lt;/h2&gt;
+    &lt;h3&gt;h3&lt;/h3&gt;
+      &lt;h4&gt;h4&lt;/h4&gt;
+        &lt;h5&gt;h5&lt;/h5&gt;
+  &lt;h2&gt;h2&lt;/h2&gt;
+    &lt;h3&gt;h3&lt;/h3&gt;
+      &lt;h4&gt;h4&lt;/h4&gt;
+        &lt;h5&gt;h5&lt;/h5&gt;
+          &lt;h6&gt;h6&lt;/h6&gt;
+</code></pre>
+</section>
+
+<hr>
+
+<section>
+  <h2>emmit 실습</h2>
+  <h3> 0. Tag name + Tab</h3>
+  <h3> 1. child : > </h3>
+    <p>ex&#41; nav>ul>li</p>
+  <pre><code>
+    &lt;nav&gt;
+      &lt;ul&gt;
+        &lt;li&gt;text&lt;/li&gt;
+        &lt;li&gt;text&lt;/li&gt;
+        &lt;li&gt;text&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/nav&gt;
+  </code></pre>
+
+  <hr>
+
+  <h3>Sibling : +</h3>
+    <p>ex&#41;div+p+bq </p>
+    <pre><code>
+      &lt;div&gt;&lt;/div&gt;
+      &lt;p&gt;&lt;/p&gt;
+      &lt;blockquote&gt;&lt;/blockquote&gt;
+    </code></pre>
+
+<hr>
+
+<h3>Climbup : ^ </h3>
+<p><em>"Move up one level and write the following content."</em><br>
+ex&#41;div+div>p>span+em^bq </p>
+<pre><code>
+  &lt;div&gt;div&lt;/div&gt;
+  &lt;div&gt;
+    &lt;p&gt;&lt;span&gt;&lt;/span&gt;&lt;em&gt;&lt;/em&gt;&lt;/p&gt;
+    &lt;blockquote&gt;&lt;/blockquote&gt;
+  &lt;/div&gt;
+</code></pre>
+
+<hr>
+
+<h3>Multiplication : *</h3>
+<p>ex&#41;ul>li*5</p>
+<pre><code>
+  &lt;ul&gt;
+    &lt;li&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+</code></pre>
+
+<hr>
+
+<h3>Grouping : ()</h3>
+<p>ex&#41;div>(header>ul>li*2>a)+footer>p</p>
+<pre><code>
+  &lt;div&gt;
+  &lt;header&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;&quot;&gt;&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;&quot;&gt;&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/header&gt;
+  &lt;footer&gt;
+    &lt;p&gt;&lt;/p&gt;
+  &lt;/footer&gt;
+&lt;/div&gt;
+
+</code></pre>
+
+<h3>Item numbering : $</h3>
+
+  <h4>'.' : class</h4>
+  <p>ex&#41; ul>li.item$*4</p>
+  <pre><code>
+    &lt;ul&gt;
+      &lt;li class=&quot;item1&quot;&gt;&lt;/li&gt;
+      &lt;li class=&quot;item2&quot;&gt;&lt;/li&gt;
+      &lt;li class=&quot;item3&quot;&gt;&lt;/li&gt;
+      &lt;li class=&quot;item4&quot;&gt;&lt;/li&gt;
+      &lt;li class=&quot;item5&quot;&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  </code></pre>
+
+  <p>ex&#41; ul>li.abc$*5</p>
+  <pre><code>
+    &lt;ul&gt;
+      &lt;li class=&quot;abc1&quot;&gt;&lt;/li&gt;
+      &lt;li class=&quot;abc2&quot;&gt;&lt;/li&gt;
+      &lt;li class=&quot;abc3&quot;&gt;&lt;/li&gt;
+      &lt;li class=&quot;abc4&quot;&gt;&lt;/li&gt;
+      &lt;li class=&quot;abc5&quot;&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  </code></pre>
+
+
+  <p>
+  <i>tag_name</i>                 <!-- 태그 이름 -->
+  <strong>[</strong>              <!-- 속성 대괄호 -->
+    <i>attribute_name</i>         <!-- 속성 이름 -->
+    <strong>=</strong>            <!-- 등호 -->
+    <i>attribute_value</i>        <!-- 속성 값 -->
+    <strong>$</strong>            <!-- 반복 시 자동 번호 -->
+  <strong>]</strong>              <!-- /속성 대괄호 -->
+  <strong>{</strong>              <!-- 내용 중괄호 -->
+    <i>content_text</i>           <!-- 내용 텍스트 -->
+    <strong>$</strong>            <!-- 반복 시 자동 번호 -->
+  <strong>}</strong>              <!-- /내용 중괄호 -->
+  <strong>*</strong>              <!-- 반복 연산자-->
+  <i>repeat_count</i>             <!-- 반복 횟수 -->
+</p>
+
+  <pre><code>
+  &lt;p&gt;
+  &lt;i&gt;tag_name&lt;/i&gt;                 &lt;!-- 태그 이름 --&gt;
+  &lt;strong&gt;[&lt;/strong&gt;              &lt;!-- 속성 대괄호 --&gt;
+    &lt;i&gt;attribute_name&lt;/i&gt;         &lt;!-- 속성 이름 --&gt;
+    &lt;strong&gt;=&lt;/strong&gt;            &lt;!-- 등호 --&gt;
+    &lt;i&gt;attribute_value&lt;/i&gt;        &lt;!-- 속성 값 --&gt;
+    &lt;strong&gt;$&lt;/strong&gt;            &lt;!-- 반복 시 자동 번호 --&gt;
+  &lt;strong&gt;]&lt;/strong&gt;              &lt;!-- /속성 대괄호 --&gt;
+  &lt;strong&gt;{&lt;/strong&gt;              &lt;!-- 내용 중괄호 --&gt;
+    &lt;i&gt;content_text&lt;/i&gt;           &lt;!-- 내용 텍스트 --&gt;
+    &lt;strong&gt;$&lt;/strong&gt;            &lt;!-- 반복 시 자동 번호 --&gt;
+  &lt;strong&gt;}&lt;/strong&gt;              &lt;!-- /내용 중괄호 --&gt;
+  &lt;strong&gt;*&lt;/strong&gt;              &lt;!-- 반복 연산자--&gt;
+  &lt;i&gt;repeat_count&lt;/i&gt;             &lt;!-- 반복 횟수 --&gt;
+  &lt;/p&gt;
+
+</code></pre>
+  <h4>[] : attribute, {} : content </h4>
+  <p>ex&#41;h[title=item$]{text $}*n</p>
+  <pre><code>
+    &lt;h title=&quot;abc&quot; 1=&quot;&quot;&gt;text 1&lt;/h&gt;
+    &lt;h title=&quot;abc&quot; 2=&quot;&quot;&gt;text 2&lt;/h&gt;
+    &lt;h title=&quot;abc&quot; 3=&quot;&quot;&gt;text 3&lt;/h&gt;
+  </code></pre>
+
+  <p>ex&#41;a[href=]{href $}*3</p>
+  <p><em>Since the **a** tag is an inline element, its results are displayed horizontally.</em></p>
+  <pre><code>
+    &lt;a href=&quot;&quot;&gt;href 1&lt;/a&gt;&lt;a href=&quot;&quot;&gt;href 2&lt;/a&gt;&lt;a href=&quot;&quot;&gt;href 3&lt;/a&gt;
+  </code></pre>
+
+  <pre><code>
+    &lt;a href=&quot;&quot;&gt;href 1&lt;/a&gt;
+    &lt;a href=&quot;&quot;&gt;href 2&lt;/a&gt;
+    &lt;a href=&quot;&quot;&gt;href 3&lt;/a&gt;
+  </code></pre>
+  
+  <p>ex&#41;</p>
+  <p>ex&#41;</p>
+
+
+</section>
+</body>
+<!-- //body -->
+</html>

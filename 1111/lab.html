@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+<meta charset="UTF-8" >
+<meta http-equiv="X-UA-Compatible" content="IE=edge" >
+<meta name="viewport" 
+        content="width=device-width, 
+                initial-scale=1.0, 
+                minimum-scale=1.0, 
+                maximum-scale=5.0, 
+                user-scalable=yes" >
+<meta name="description" content="설명 입력">
+<title>table 태그 실습</title>
+<style>
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-bottom: 20px;
+    }
+    th,
+    td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: left;
+    }
+    th {
+        background-color: #f2f2f2;
+    }
+    caption {
+        caption-side: top;
+        font-weight: bold;
+        font-size: 1.2em;
+        margin-bottom: 10px;
+    }
+</style>
+</head>
+<body>
+    <table>
+        <caption>학생 성적표</caption>
+        <thead>
+            
+            <tr>
+                <th scope="col">학생</th>
+                <th scope="col">영어</th>
+                <th scope="col">수학</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>라이캣</th>
+                <td>100</td>
+                <td rowspan="2">90</td>
+            <tr>
+                <th>로지</th>
+                <td>80</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th>평균</th>
+                <td colspan="2">90</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
+
+<table>
+    <thead>
+        <tr>
+            <th colspan="4" scope="colgroup">강사 개인정보</th>
+        </tr>
+        <tr>
+            <th scope="col">강의 시수 구분</th>
+            <th scope="col">이름</th>
+            <th scope="col">나이</th>
+            <th scope="col">거주지</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th rowspan="2" scope="rowgroup">보조강사</th>
+            <th scope="row">Rosy</th>
+            <td>52</td>
+            <td>브리즈번</td>
+        </tr>
+        <tr>
+            <!-- <td>보조강사</td> -->
+            <th scope="row">ZeeZee</th>
+            <td>18</td>
+            <td>제주</td>
+        </tr>
+        <tr>
+            <th rowspan="2" scope="rowgroup">주강사</th>
+            <th scope="row">Licat</th>
+            <td>35</td>
+            <td>도쿄</td>
+        </tr>
+        <tr>
+            <!-- <td>주강사</td> -->
+            <th scope="row">Wade</th>
+            <td>28</td>
+            <td>파리</td>
+        </tr>
+    </tbody>
+</table>
