@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+<meta charset="UTF-8" >
+<meta http-equiv="X-UA-Compatible" content="IE=edge" >
+<meta name="viewport" 
+        content="width=device-width, 
+                initial-scale=1.0, 
+                minimum-scale=1.0, 
+                maximum-scale=5.0, 
+                user-scalable=yes" >
+<meta name="description" content="설명 입력">
+<title></title>
+</head>
+<body>
+<!-- <dialog> -->
+<div>
+    
+    <!-- 헤더는 한 페이지 내에서 여러번 넣어주실 수 있다. -->
+    <header>
+        <h2>로그인 또는 회원가입</h2>
+        <button>
+            <!-- 첫번째 방법 -->
+            <!-- <img src="./src/img/close.png" alt="창 닫기"> -->
+            <!-- 두번째 방법 -->
+            <img src="./src/img/close.png" alt="">
+            <span>창 닫기</span> <!--sr만 처리 가능하도록 처리-->
+        </button>
+    </header>
+    <!-- 모달은 부수적인 요소. main은 모달 외부에 있을 테니 섹션으로 묶는다. -->
+    <section>
+        <!-- 모달 덩어리 내의 하위이니 계층구조 내려간다. -->
+        <h3>로그인</h3>
+        <p>위니브에서~</p>
+        <!-- 아이디 비밀번호만 있는 경우 fieldset 보다는 form 정도로만 묶어주면 된다. -->
+        <!-- 하단의 label태그는 나중에 안보이게 처리 -->
+        <label for="id">아이디</label>
+        <input type="text" id="id" placeholder="아이디">
+        <label for="pw"></label>
+        <label for="password" id="pw">비밀번호</label>
+        <label for="stay"><img src="">로그인상태유지</img></label>
+        <input type="checkbox" name="" id="stay">
+        <!-- form 태그니 기본값은 submit -->
+        <button type="submit">로그인</button>
+    </section>
+</div>
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+<meta charset="UTF-8" >
+<meta http-equiv="X-UA-Compatible" content="IE=edge" >
+<meta name="viewport" 
+        content="width=device-width, 
+                initial-scale=1.0, 
+                minimum-scale=1.0, 
+                maximum-scale=5.0, 
+                user-scalable=yes" >
+<meta name="description" content="설명 입력">
+<title>select tag</title>
+</head>
+<body>
+    <select name="" id="" multiple size="2">
+        <option value="FE" selected>front-end</option>
+        <option value="BE">back-end</option>
+        <option value="DA">Data analysis</option>
+        <option value="BE">back-end</option>
+    </select>
+
+    <label for="language">사용하는 개발 언어를 선택하세요</label>
+<select id="language" name="language">
+    <optgroup label="프로그래밍 언어">
+        <option value="python">Python</option>
+        <option value="javascript">JavaScript</option>
+        <option value="java">Java</option>
+        <option value="csharp">C#</option>
+    </optgroup>
+    <optgroup label="데이터베이스">
+        <option value="mysql">MySQL</option>
+        <option value="postgresql">PostgreSQL</option>
+        <option value="mongodb">MongoDB</option>
+        <option value="sqlite">SQLite</option>
+    </optgroup>
+</select>
+
+<fieldset>
+    <legend>여행 선호도</legend>
+    <input type="radio" name="travel" value="mountains" id="mountains" />
+    <label for="mountains">산</label>
+    <input type="radio" name="travel" value="beach" id="beach" />
+    <label for="beach">바다</label>
+    <input type="radio" name="travel" value="city" id="city" />
+    <label for="city">도시</label>
+    <input type="radio" name="travel" value="countryside" id="countryside" />
+    <label for="countryside">시골</label>
+</fieldset>
+
+<fieldset>
+    <legend>성별</legend>
+    <input type="radio" id="male" name="gender">
+    <label for="male">남성</label>
+    <input type="radio" id="female" name="gender">
+    <label for="radio" id="female">여성</label>
+    
+    <legend>사옹기술</legend>
+    <input type="checkbox" id="html" name="skill">
+    <label for="html">HTML</label>
+    <input type="checkbox" id="css" name="skill">
+    <label for="css">CSS</label>
+</fieldset>
+
+<!-- for,id / list,id 구별가게-->
+<label for="browser">사용하시는 브라우져를 선택하세요</label>
+<input type="text" list="browsers" id="browser"/>
+<datalist id="browsers">
+    <option value="chrome">chrome</option>
+    <option value="safari">safari</option>
+    <option value="edge">edge</option>
+    <option value="samsung-internet">samsung-internet</option>
+</datalist>
+<input type="submit">
+
+<!-- label 써주고 CSS로 가린다. 시각장애인 리더용 -->
+<label for="mail">10자 이상 100자 이하로 내용을 입력해주세요</label>
+<textarea
+    id="mail"
+    rows="10"
+    cols="50"
+    minlength="10"
+    maxlength="100"
+    placeholder="10자 이상 100자 이하로 내용을 입력해주세요"
+></textarea>
+
+<!-- 양식 제출용이 아니면 타입은 버튼으로 -->
+<!-- form 태그 안에 넣으면 자동으로 submit으로 바뀐다. -->
+<form>
+    <button type="button">버튼입니다.</button>
+    <button type="submit">제출하기</button>
+    <button type="reset">초기화</button>
+    
+    <!-- input은 텍스트 외 아이콘, 이미지 못넣음 -->
+    <input type="button" value="버튼">
+    <input type="submit">
+    <input type="reset">
+</form>
+
+
+
+
+</body>
+</html>
